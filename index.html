@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בלתי מנוצח - לצפייה ישירה מדובב</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .hero-gradient {
+            background: linear-gradient(180deg, rgba(15, 23, 42, 0.7) 0%, rgba(15, 23, 42, 1) 100%),
+                        url('https://i.postimg.cc/XvSz7WL2/Season-1-Episode-1-Screenshot.webp');
+            background-size: cover;
+            background-position: center;
+        }
+        .invincible-yellow { color: #facc15; }
+        .invincible-blue { background-color: #2563eb; }
+        .episode-card:hover { 
+            transform: scale(1.05); 
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+        .episode-img {
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header / Navbar -->
+    <nav class="p-6 flex justify-between items-center bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+        <div class="text-3xl font-black italic tracking-tighter invincible-yellow">INVINCIBLE</div>
+        <div class="space-x-4 space-x-reverse">
+            <a href="https://dcxgfzsregefageyfvdgterw.github.io/invincible-IL" class="hover:text-yellow-400 transition">חזרה לדף הבית</a>
+            <a href="#" class="hover:text-yellow-400 transition font-bold border-b-2 border-yellow-400">מדובב</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-gradient h-[60vh] flex flex-col justify-center items-center text-center px-4">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-4 drop-shadow-2xl text-white">בלתי מנוצח</h1>
+        <p class="text-xl md:text-2xl max-w-2xl text-slate-300 mb-8 font-light">
+            מארק גרייסון מגלה שהמורשת של אביו, גיבור העל החזק בעולם, מורכבת הרבה יותר ממה שדמיין. 
+            צפו עכשיו בכל פרקי העונה הראשונה בדיבוב לעברית.
+        </p>
+        <div class="flex gap-4">
+            <button onclick="scrollToEpisodes()" class="invincible-blue px-8 py-3 rounded-full font-bold text-lg hover:bg-blue-700 transition shadow-lg">לבחירת פרק</button>
+            <span class="bg-red-600 px-4 py-3 rounded-full font-bold text-sm flex items-center shadow-lg">כל הפרקים מדובבים</span>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        
+        <!-- Episode Selection -->
+        <section id="episodes-section" class="mb-16">
+            <div class="flex items-center justify-between mb-8">
+                <h2 class="text-3xl font-bold">רשימת פרקים - עונה 1</h2>
+                <span class="text-slate-400 text-sm">לחצו על פרק לצפייה ב-MEGA</span>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Episode 1 -->
+                <a href="https://mega.nz/file/Qj4AjDra#cml2wYtCGg43ue5QniscM_G76AaQnd4Gz6-MvQbz1CQ" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/XvSz7WL2/Season-1-Episode-1-Screenshot.webp" alt="פרק 1" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">1. הגיע הזמן</span>
+                        <h3 class="font-bold text-lg mt-1">הגיע הזמן</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">כאשר מארק גרייסון סוף סוף יורש כוחות מאביו גיבור העל, זהו חלום שהתגשם. אבל להיות גיבור זה יותר מאשר לבחור שם וחליפה.</p>
+                    </div>
+                </a>
+
+                <!-- Episode 2 -->
+                <a href="https://mega.nz/file/NmIjWAaL#ALUfbesw_xuEwLZMbjx5a0QkaUIy6BULyBgdZF9Kado" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/2SBtDyQs/Season-1-Episode-2-Screenshot.webp" alt="פרק 2" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">2. על החיים ועל המוות</span>
+                        <h3 class="font-bold text-lg mt-1">על החיים ועל המוות</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">כאשר אביו מושבת, מארק מתקשה להגן על העיר מפני פלישה בין-ממדית והוא מאחד כוחות עם צוות של בני נוער גיבורי-על.</p>
+                    </div>
+                </a>
+
+                <!-- Episode 3 -->
+                <a href="https://mega.nz/file/pqRQkKpK#yGNIwem4qbqpV1f4B_y2g1ZO5sPZgV_4dzvDpbNa2zs" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/gjCvqzxd/Season-1-Episode-3-Screenshot.webp" alt="פרק 3" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">3. למי קראת מכוער?</span>
+                        <h3 class="font-bold text-lg mt-1">למי קראת מכוער?</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">מארק צריך לקצר פגישת לימודים כדי לעזור להציל את הר ראשמור ממדען משוגע. רובוט מתמודד עם דרמה כאשר הוא...</p>
+                    </div>
+                </a>
+
+                <!-- Episode 4 -->
+                <a href="https://mega.nz/file/4vI20J4B#b_-Wk-xjFNGVrzqLuKILaerBBUQhKfICz6YK_cN-xv0" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/WzBM6Ndv/Season-1-Episode-4-Screenshot.webp" alt="פרק 4" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">4. ניל ארמסטרונג, תאכל את הלב</span>
+                        <h3 class="font-bold text-lg mt-1">ניל ארמסטרונג, תאכל את הלב</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">שתי פעמים ראשונות עבור מארק: דייט ראשון וטיול ראשון לכוכב לכת אחר. באותו הזמן, נולאן ודבי מבקרים שוב במקום שבו ב'...</p>
+                    </div>
+                </a>
+
+                <!-- Episode 5 -->
+                <a href="https://mega.nz/file/N6Ji3arb#CnFuUx4m1Pb0DVjW_52DnS7ZzNh1BEdIwgixk3-ASBU" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/rsBSCVD2/Season-1-Episode-5-Screenshot.webp" alt="פרק 5" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">5. זה כואב</span>
+                        <h3 class="font-bold text-lg mt-1">זה כואב</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">מארק, המרגיש בטוח ביכולותיו החדשות, משתף פעולה עם נבל מקומי כדי להפיל אדון פשע, ובמקביל מתמרן בין בית...</p>
+                    </div>
+                </a>
+
+                <!-- Episode 6 -->
+                <a href="https://mega.nz/file/8qBjXCqD#Hm4yWCikxlHC_ui53_Cy6AQH2EmMXC7fh549FZPrtN4" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/RhkcQSWr/Season-1-Episode-6-Screenshot.webp" alt="פרק 6" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">6. אתה נראה די מת</span>
+                        <h3 class="font-bold text-lg mt-1">אתה נראה די מת</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">מארק מצטרף לוויליאם ולאמבר לביקור באוניברסיטת אפסטייט, בתקווה לגלות עתיד חדש עבורו. דבי מגלה תגלית מטרידה...</p>
+                    </div>
+                </a>
+
+                <!-- Episode 7 -->
+                <a href="https://mega.nz/file/RjIyCBIa#UQbLMyeki_BI7w1-d6XnwFOPtZ4LfC7j-4rbYP4EwLo" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/sxkp9jMd/Season-1-Episode-7-Screenshot.webp" alt="פרק 7" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">7. עלינו לדבר</span>
+                        <h3 class="font-bold text-lg mt-1">עלינו לדבר</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">מארק, המרגיש אבוד ומבולבל, מחפש עצה מאביי. בינתיים, כולם מחפשים אותו.</p>
+                    </div>
+                </a>
+
+                <!-- Episode 8 -->
+                <a href="https://mega.nz/file/Z2oWVL6S#rNnovaBjasHcGyg3efUE4sz5fNWC2Y-Y_O8yl_AEqKM" target="_blank" class="episode-card bg-slate-800 rounded-xl overflow-hidden block">
+                    <img src="https://i.postimg.cc/GtWkJLHV/Season-1-Episode-8-Screenshot.webp" alt="פרק 8" class="episode-img">
+                    <div class="p-4 border-t border-slate-700">
+                        <span class="text-blue-400 text-xs font-bold uppercase">8. מאין באמת באתי</span>
+                        <h3 class="font-bold text-lg mt-1">מאין באמת באתי</h3>
+                        <p class="text-slate-400 text-sm mt-2 line-clamp-3">מארק חייב להוכיח שהוא הפך לגיבור שהוא תמיד רצה להיות על ידי עצירת כוח בלתי ניתן לעצירה.</p>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-950 p-12 mt-12 text-center text-slate-500 border-t border-slate-800">
+        <p class="mb-4 font-black invincible-yellow text-xl italic uppercase tracking-widest">INVINCIBLE DUBBED</p>
+        <p>צפייה ישירה בגרסה העברית</p>
+        <p class="text-xs mt-4">כל הקישורים מפנים לאחסון חיצוני ב-MEGA</p>
+    </footer>
+
+    <script>
+        function scrollToEpisodes() {
+            document.getElementById('episodes-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
